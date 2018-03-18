@@ -253,7 +253,12 @@ Connstring download URLs
 Simple example
 ----------------
 
-In Dexterity you can specify a ``@@download`` field for content types:
+In Dexterity you can specify a ``@@download`` field for content types.
+The common schema is ``http://host/path/to/filecontent/@@download/FIELDNAME``.
+In order to get a URL containing the original filename it may be appended this way:
+``http://host/path/to/filecontent/@@download/FIELDNAME/FILENAME.EXT``.
+As in the example below it the original uploaded filename may be used,
+but a new/custom filename is fine too.
 
 .. code-block:: html
 
